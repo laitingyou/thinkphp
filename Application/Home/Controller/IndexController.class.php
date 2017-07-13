@@ -5,8 +5,8 @@ use Think\Controller;
 
 class IndexController extends Controller
 {
-    public function index()
+    public function indexAction()
     {
-        $this->show(3224);
+        echo "123123132133";
     }
 }
