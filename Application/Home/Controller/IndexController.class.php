@@ -11,16 +11,25 @@ class IndexController extends Controller
         $this->assign('active','2');
         $this->display('about');
     }
-    public function contact (){
-        $this->display('contact');
+    public function skills (){
+        $this->assign('active','3');
+        $this->display('skills');
+    }
+    public function experience (){
+        $this->assign('active','4');
+        $this->display('experience');
     }
     public function education (){
+        $this->assign('active','5');
         $this->display('education');
     }
     public function projects (){
+        $this->assign('active','6');
         $this->display('projects');
     }
-    public function skills (){
-        $this->display('skills');
+    public function contact (){
+        $this->assign('active','7');
+        $this->display('contact');
     }
+
 }
