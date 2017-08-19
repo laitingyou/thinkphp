@@ -1,1 +1,1 @@
-php练习
+This is a thinkphp project 
