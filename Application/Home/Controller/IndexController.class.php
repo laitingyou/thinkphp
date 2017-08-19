@@ -1,12 +1,9 @@
 <?php
 namespace Home\Controller;
-
 use Think\Controller;
-
 class IndexController extends Controller
 {
-    public function indexAction()
-    {
-        echo "123123132133";
+    public function index (){
+        $this->display();
     }
 }

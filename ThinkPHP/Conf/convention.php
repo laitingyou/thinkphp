@@ -22,7 +22,7 @@ return array(
     'APP_SUB_DOMAIN_DEPLOY'  => false, // 是否开启子域名部署
     'APP_SUB_DOMAIN_RULES'   => array(), // 子域名部署规则
     'APP_DOMAIN_SUFFIX'      => '', // 域名后缀 如果是com.cn net.cn 之类的后缀必须设置
-    'ACTION_SUFFIX'          => 'Action', // 操作方法后缀
+    'ACTION_SUFFIX'          => '', // 操作方法后缀
     'MULTI_MODULE'           => true, // 是否允许多模块 如果为false 则必须设置 DEFAULT_MODULE
     'MODULE_DENY_LIST'       => array('Common', 'Runtime'),
     'CONTROLLER_LEVEL'       => 1,
@@ -105,8 +105,8 @@ return array(
     'TMPL_ACTION_ERROR'      => THINK_PATH . 'Tpl/dispatch_jump.tpl', // 默认错误跳转对应的模板文件
     'TMPL_ACTION_SUCCESS'    => THINK_PATH . 'Tpl/dispatch_jump.tpl', // 默认成功跳转对应的模板文件
     'TMPL_EXCEPTION_FILE'    => THINK_PATH . 'Tpl/think_exception.tpl', // 异常页面的模板文件
-    'TMPL_DETECT_THEME'      => false, // 自动侦测模板主题
-    'TMPL_TEMPLATE_SUFFIX'   => '.html', // 默认模板文件后缀
+    'TMPL_DETECT_THEME'      => true, // 自动侦测模板主题
+    'TMPL_TEMPLATE_SUFFIX'   => '.php', // 默认模板文件后缀
     'TMPL_FILE_DEPR'         => '/', //模板文件CONTROLLER_NAME与ACTION_NAME之间的分割符
     // 布局设置
     'TMPL_ENGINE_TYPE'       => 'Think', // 默认模板引擎 以下设置仅对使用Think模板引擎有效
