@@ -2,13 +2,13 @@
 <div class="header">
     <div class="container">
         <div class="logo">
-            <h1><a href="__APP__">Trendy CV</a></h1>
+            <h1><a href="__APP__/index">{$info['logo']}</a></h1>
         </div>
         <div class="menu">
             <a href="#" class="navicon"></a>
             <div class="toggle effect-3">
                 <ul class="toggle-menu">
-                    <li><a href="__APP__" class="{$active==1?'active':''}"> Home</a></li>
+                    <li><a href="__APP__/index" class="{$active==1?'active':''}"> Home</a></li>
                     <li><a href="__APP__/about" class="{$active==2?'active':''}"> About</a></li>
                     <li><a href="__APP__/skills" class="{$active==3?'active':''}"> Skills</a></li>
                     <li><a href="__APP__/experience" class="{$active==4?'active':''}">Experience</a></li>

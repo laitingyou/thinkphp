@@ -39,7 +39,7 @@
     <block name="footer">
         <div class="w3agile-footer">
             <div class="container">
-                <p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                <p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="#">Laitingyou</a></p>
             </div>
         </div>
     </block>

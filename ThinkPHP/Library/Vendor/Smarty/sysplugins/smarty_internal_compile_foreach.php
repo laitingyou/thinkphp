@@ -81,7 +81,7 @@ class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase {
         if ($has_name) {
             $usesSmartyFirst = strpos($tpl->source->content, $SmartyVarName . 'first') !== false;
             $usesSmartyLast = strpos($tpl->source->content, $SmartyVarName . 'last') !== false;
-            $usesSmartyIndex = strpos($tpl->source->content, $SmartyVarName . 'index') !== false;
+            $usesSmartyIndex = strpos($tpl->source->content, $SmartyVarName . 'Index.class') !== false;
             $usesSmartyIteration = strpos($tpl->source->content, $SmartyVarName . 'iteration') !== false;
             $usesSmartyShow = strpos($tpl->source->content, $SmartyVarName . 'show') !== false;
             $usesSmartyTotal = strpos($tpl->source->content, $SmartyVarName . 'total') !== false;
@@ -94,7 +94,7 @@ class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase {
 
         $usesPropFirst = $usesSmartyFirst || strpos($tpl->source->content, $ItemVarName . 'first') !== false;
         $usesPropLast = $usesSmartyLast || strpos($tpl->source->content, $ItemVarName . 'last') !== false;
-        $usesPropIndex = $usesPropFirst || strpos($tpl->source->content, $ItemVarName . 'index') !== false;
+        $usesPropIndex = $usesPropFirst || strpos($tpl->source->content, $ItemVarName . 'Index.class') !== false;
         $usesPropIteration = $usesPropLast || strpos($tpl->source->content, $ItemVarName . 'iteration') !== false;
         $usesPropShow = strpos($tpl->source->content, $ItemVarName . 'show') !== false;
         $usesPropTotal = $usesSmartyTotal || $usesSmartyShow || $usesPropShow || $usesPropLast || strpos($tpl->source->content, $ItemVarName . 'total') !== false;

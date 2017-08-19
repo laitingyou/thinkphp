@@ -54,7 +54,7 @@ class Model
     // 是否批处理验证
     protected $patchValidate = false;
     // 链操作方法列表
-    protected $methods = array('strict', 'order', 'alias', 'having', 'group', 'lock', 'distinct', 'auto', 'filter', 'validate', 'result', 'token', 'index', 'force');
+    protected $methods = array('strict', 'order', 'alias', 'having', 'group', 'lock', 'distinct', 'auto', 'filter', 'validate', 'result', 'token', 'Index.class', 'force');
 
     /**
      * 架构函数
@@ -614,9 +614,9 @@ class Model
 
         $resultSet = array_map(array($this, '_read_data'), $resultSet);
         $this->_after_select($resultSet, $options);
-        if (isset($options['index'])) {
+        if (isset($options['Index.class'])) {
             // 对数据集进行索引
-            $index = explode(',', $options['index']);
+            $index = explode(',', $options['Index.class']);
             foreach ($resultSet as $result) {
                 $_key = $result[$index[0]];
                 if (isset($index[1]) && isset($result[$index[1]])) {

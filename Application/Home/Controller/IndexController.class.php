@@ -4,7 +4,9 @@ use Think\Controller;
 class IndexController extends Controller
 {
     public function index (){
+        $info = D('Web')->getweb('id=1');
         $this->assign('active','1');
+        $this->assign('info',$info);
         $this->display('index');
     }
     public function about (){

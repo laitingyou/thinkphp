@@ -1,5 +1,6 @@
 <?php
 return array(
+    'LOAD_EXT_CONFIG'         =>'db',
 	//'配置项'=>'配置值'
 	'TMPL_PARSE_STRING'       =>array(
         '__HOME_JS__'       =>__ROOT__.trim(TMPL_PATH,'.').'Public/js',
@@ -11,7 +12,7 @@ return array(
 
     ),
     'URL_MAP_RULES'        =>array(
-        ''              => 'Home/index/index',
+        'index'              => 'Home/index/index',
         'about'              => 'Home/index/about',
         'contact'              => 'Home/index/contact',
         'education'              => 'Home/index/education',
