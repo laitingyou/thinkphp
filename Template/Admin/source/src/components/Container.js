@@ -3,16 +3,27 @@ import '../statics/App.css';
 import Nav from './Nav';
 import RightNav from './RightNav';
 import Login from './Login';
-class App extends Component {
+class Container extends Component {
+    constructor(props) {
+        super(props);
+    }
+    state={
+            loading:false
+    }
+    componentWillMount(){
+    }
+
+
     render() {
         return (
             <div>
-                <RightNav/>
+
+              <RightNav/>
                 <Nav/>
                 <div className="main">
                     <div className="main-content">
                         <div className="container-fluid">
-                            <Login/>
+                            {this.props.children}
                         </div>
                     </div>
                 </div>
@@ -21,4 +32,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Container;

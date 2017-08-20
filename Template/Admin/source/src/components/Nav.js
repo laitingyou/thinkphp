@@ -1,6 +1,9 @@
-import React from 'react';
+import React ,{Component}from 'react';
 
-let Nav = React.createClass({
+class Nav extends Component{
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
             <div id="sidebar-nav" className="sidebar">
@@ -14,5 +17,5 @@ let Nav = React.createClass({
             </div>
         )
     }
-});
+};
 export default Nav;
