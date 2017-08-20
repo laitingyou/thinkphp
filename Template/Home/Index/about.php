@@ -30,37 +30,37 @@
                         <img src="__HOME_IMG__/img1.jpg" class="img-responsive" alt=""/>
                     </div>
                     <div class="col-md-8 col-sm-8 about-right wthree">
-                        <h3>Hi, i'm <span>Wikolia Mark </span></h3>
+                        <h3>Hi, i'm <span>{$info['name']}</span></h3>
                         <h4>Web Designer & Developer </h4>
                         <ul class="address">
                             <li>
                                 <ul class="agileits-address-text ">
                                     <li><b>D.O.B :</b></li>
-                                    <li>23-06-1980</li>
+                                    <li>{$info['birthday']}</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="agileits-address-text">
                                     <li><b>PHONE : </b></li>
-                                    <li>+00 111 222 3333</li>
+                                    <li>{$info['phone']}</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="agileits-address-text">
                                     <li><b>ADDRESS :</b></li>
-                                    <li>756 global Place, North Sydney, Canada.</li>
+                                    <li>{$info['address']}</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="agileits-address-text">
                                     <li><b>E-MAIL :</b></li>
-                                    <li><a href="mailto:example@mail.com"> mail@example.com</a></li>
+                                    <li><a href="mailto:example@mail.com"> {$info['email']}</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="agileits-address-text">
                                     <li><b>WEBSITE :</b></li>
-                                    <li><a href="http://w3layouts.com">www.myresume.com</a></li>
+                                    <li><a href="http://w3layouts.com">{$info['website']}</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -84,9 +84,7 @@
                     </div>
                     <div class="clearfix"> </div>
                     <div class="about-text agileits-w3layouts">
-                        <p> Aliquam aliquet sapien quis mauris semper suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet sem sit amet dolor luctus pellentesque. Pellentesque eleifend tellus at interdum elementum. Nam egestas molestie elit. Vivamus sed accumsan quam, a mollis magna. Nam aliquet eros eget sapien consequat tincidunt at vel nibh sed accumsan quam.
-                            Maecenas pharetra dapibus posuere. Praesent odio sem, varius quis dolor vel, maximus dapibus mi. Pellentesque mattis mauris neque. Nam aliquam turpis ante, at cursus massa ullamcorper ut.<br>Nam egestas molestie elit. Vivamus sed accumsan quam, a mollis magna. Nam aliquet eros eget sapien consequat tincidunt at vel nibh sed accumsan quam.
-                            uspendisse laoreet sem sit amet dolor luctus pellentesque Maecenas pharetra dapibus posuere. Praesent odio sem, varius quis dolor vel, maximus dapibus mi. Pellentesque mattis mauris neque. Nam aliquam turpis ante, at cursus massa ullamcorper ut eleifend tellus at interdum elementum.</p>
+                        <p> {$info['article']}</p>
                     </div>
                 </div>
             </div>

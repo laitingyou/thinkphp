@@ -16,4 +16,8 @@ class WebModel extends Model
        $all=$this->where($arr)->select();
        return $all[0];
     }
+
+    public function saveinfo($arr){
+
+    }
 }

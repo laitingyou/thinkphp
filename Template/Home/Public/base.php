@@ -43,9 +43,6 @@
             </div>
         </div>
     </block>
-
-    <!-- //footer -->
-    <!-- menu-js -->
     <script>
         $('.navicon').on('click', function(e) {
             e.preventDefault();
@@ -53,10 +50,6 @@
             $('.toggle').toggleClass('toggle--active');
         });
     </script>
-    <!-- //menu-js -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="__PUBLIC__/statics/js/bootstrap.js"></script>
 </body>
 
