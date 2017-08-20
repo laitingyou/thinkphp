@@ -12,7 +12,7 @@ return array(
     'DB_HOST'                => '123.207.244.81', // 服务器地址
     'DB_NAME'                => 'resume_dbdata', // 数据库名
     'DB_USER'                => 'laitingyou', // 用户名
-    'DB_PWD'                 => 'lty5201314', // 密码
+    'DB_PWD'                 => '', // 密码
     'DB_PORT'                => '3306', // 端口
     'DB_PREFIX'              => 'resume_', // 数据库表前缀
 
